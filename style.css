@@ -81,6 +81,10 @@ section {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+}
+
 .title span {
     text-shadow: -4px 0px #3C50BB;
     font-weight: bold;
