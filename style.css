@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poopins", sans-serif;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1D1D1D;
+    color: #fff;
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 10%;
+}
+
+.tag {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    color: #49494A;
+}
+
+.greet {
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.name {
+    display: flex;
+}
+
+.name .A {
+    text-shadow: -8px 0px #3C50BB;
+}
+
+.brief-intro {
+    padding-top: 24px;
+    color: #787878;
+}
+
+.brief-intro p {
+    padding: 12px 0;
+}
+
+/* Timeline Container */
+.timeline {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+    border-left: 2px solid #333;
+}
+
+/* Card container */
+.card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+/* Information about the timeline */
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Title of the card */
+.title {
+    color: white;
+    position: relative;
+}
+
+.title span {
+    text-shadow: -4px 0px #3C50BB;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: grey;
+    position: relative;
+    font-size: 16px;
+}
+
+/* Timeline dot  */
+.title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -39px;
+    border: 3px solid grey;
+}
+
+.glass {
+    margin: 2% 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.divider {
+    border-top: 1px solid #bbb;
+    display: none;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.project-img {
+    width: 100%;
+    filter: brightness(50%);
+    transition: 500ms;
+}
+
+.project-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-img:hover {
+    filter: brightness(100%);
+    transition: 500ms;
+}
+
+.column img {
+    max-width: 100%;
+}
+
+.column video {
+    width: 100%;
+}
+
+.column .stack {
+    display: flex;
+}
+
+.column .stack > div {
+    padding: 8px 12px 12px 0;
+    font-size: 12px;
+    color: #DBDBDB;
+}
+
+.column a {
+    color: white;
+}
+
+.column .external-links {
+    padding-bottom: 12px;
+}
+
+.column .description {
+    color: #DBDBDB;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cat-group {
+    display: block;
+    position: relative;
+    margin: 10% auto;
+}
+
+.cat-group, .cat-card {
+    aspect-ratio: 5 / 7;
+}
+
+.cat-group, .bit-card {
+    width: 30vmin;
+}
+
+.cat-card {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    transition: transform 800ms cubic-bezier(.05, .43, .25, .95);
+}
+
+.big-card {
+    width: 30vmin;
+    border-radius: 1vmin;
+}
+
+.little-card {
+    width: 12vmin;
+    border-radius: 2vmin;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.big-card:nth-child(2) {
+    background-image: url('img/cats/2.jpg');
+    background-size: cover;
+    transform: translateX(-10%) rotate(-1deg);
+}
+
+.big-card:nth-child(4) {
+    background-image: url('img/cats/4.jpg');
+    background-size: cover;
+    transform: rotate(2deg);
+}
+
+.big-card:nth-child(6) {
+    background-image: url('img/cats/6.jpg');
+    background-size: cover;
+    transform: translateX(-6%) rotate(-3deg);
+}
+
+.big-card:nth-child(8) {
+    background-image: url('img/cats/8.jpg');
+    background-size: cover;
+    transform: translate(10%, 3%) rotate(5deg);
+}
+
+.little-card:nth-child(1) {
+    background-image: url('img/cats/1.jpg');
+    background-size: cover;
+}
+
+.little-card:nth-child(3) {
+    background-image: url('img/cats/3.jpg');
+    background-size: cover;
+}
+
+.little-card:nth-child(5) {
+    background-image: url('img/cats/5.jpg');
+    background-size: cover;
+}
+
+.little-card:nth-child(7) {
+    background-image: url('img/cats/7.jpg');
+    background-size: cover;
+}
+
+.cat-group:hover > .big-card:nth-child(2) {
+    transform: translate(-75%, 16%) rotate(-24deg);
+}
+
+.cat-group:hover > .big-card:nth-child(4) {
+    transform: translate(-25%, 8%) rotate(-8deg)
+}
+
+.cat-group:hover > .big-card:nth-child(6) {
+    transform: translate(25%, 8%) rotate(8deg)
+}
+
+.cat-group:hover > .big-card:nth-child(8) {
+    transform: translate(75%, 16%) rotate(24deg)
+}
+
+.cat-group:hover > .little-card:nth-child(1) {
+    transform: translate(200%, -160%) rotate(-15deg);
+}
+
+.cat-group:hover > .little-card:nth-child(3) {
+    transform: translate(160%, 170%) rotate(15deg);
+}
+
+.cat-group:hover > .little-card:nth-child(5) {
+    transform: translate(-200%, -170%) rotate(15deg);
+}
+
+.cat-group:hover > .little-card:nth-child(7) {
+    transform: translate(-280%, 140%) rotate(-15deg);
+}
+
+.contacts {
+    display: flex;
+}
+
+.contacts a {
+    color: white;
+}
+
+.contacts > div {
+    padding: 2%;
+}
+
+
+@media(max-width: 750px) {
+    .greet {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .name .A {
+        text-shadow: -4px 0px #3C50BB;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .divider {
+        display: block;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+
+    .contacts {
+        margin: 10% 0;
+    }
+
+    .cat-group {
+        margin: 15% auto;
+    }
+}
+
+@media(max-width: 420px) {
+    .tag {
+        font-size: 25px;
+        margin: 5% 0;
+    }
+
+    .greet {
+        font-size: 30px;
+    }
+
+    .name .A {
+        text-shadow: -2px 0px #3C50BB;
+    }
+
+    .cat-group {
+        margin: 35% auto;
+    }
+
+    .contacts {
+        margin: 10% 0;
+    }
+}
