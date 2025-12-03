@@ -1,238 +1,294 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:fb="http://ogp.me/ns/fb#">
-<html>
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <meta charset="utf-8">
-        <title>Adrian's Personal Homepage</title>
-        <link rel="icon" href="img/icon.png">
-        <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        <meta name="description" content="Adrian Wong"/>
-        <meta property="og:title" content="Adrian Wong | Software Engineer"/>
-        <meta property="og:description" content="A HKUST Computer Engineering Graduate. Love programming, gaming and learning latest, coolest technologies."/>
-        <meta property="description" content="A HKUST Computer Engineering Graduate. Love programming, gaming and learning latest, coolest technologies."/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
-    </head>
+<html lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian Wong | Software Engineer</title>
+    <link rel="icon" href="img/icon.png">
+    <meta name="description" content="Adrian Wong - Software Engineer specializing in building exceptional digital experiences."/>
+    <meta property="og:title" content="Adrian Wong | Software Engineer"/>
+    <meta property="og:description" content="A HKUST Computer Engineering Graduate. Love programming, gaming and learning latest, coolest technologies."/>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <body>
-        <section class="intro">
-            <div class="tag">
-                &lt;intro&gt;
-            </div>
-            <div class="greet">
-                Hi, I am
-            </div>
-            <div class="greet">
-                <div class=name><div class="A">Ad</div>rian Wong.</div>
-            </div>
-            <div class="greet">
-                A Software Engineer.
-            </div>
-            <div class="brief-intro">
-                <p>I specialize in building exceptional digital experiences.</p>
-                <p>I love programming, gaming and learning latest, coolest technologies.</p>
-                <p>Do what you love. Love what you do.</p>
-            </div>
-            <div class="tag">
-                &lt;/intro&gt;
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">AW<span class="dot">.</span></a>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#cats">My Cats</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content" data-aos="fade-up">
+                    <p class="mono-text highlight">Hi, my name is</p>
+                    <h1 class="glitch-text">Adrian Wong.</h1>
+                    <h2 class="subtitle">Problem solver & full-stack engineer.</h2>
+                    <p class="bio">I enjoy turning ideas into reliable software — whether it’s a frontend interaction, backend service, or tooling. Currently at <a href="https://measurable.ai" class="link-highlight">Measurable AI</a>.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">Check out my work</a>
+                        <a href="#contact" class="btn btn-outline">Get in touch</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="experiences">
-            <div class="tag">
-                &lt;experiences&gt;
-            </div>
-            <div class="timeline">
-                <div class="outer">
-                    <div class="card">
-                        <div class="info">
-                            <a href="https://measurable.ai"><h3 class="title"><span>Software Engineer</span> - Measurable AI</h3></a>
-                            <h4 class="subtitle">2023-present</h4>
-                            <p>My role involves designing and implementing scalable software solutions that enhance the efficiency and effectiveness of our AI-driven products.</p>
+        <section id="experience" class="section-padding">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-right"><span class="mono-text">01.</span> Experience</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Software Engineer</h3>
+                                <span class="company">@ <a href="https://measurable.ai">Measurable AI</a></span>
+                                <span class="date">2023 - Present</span>
+                            </div>
+                            <p>Designing and implementing scalable software solutions that enhance the efficiency and effectiveness of our AI-driven products.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="info">
-                            <a href="https://coveinnovative.com/"><h3 class="title"><span>Founder</span> - Cove Innovative Limited</h3></a>
-                            <h4 class="subtitle">2022-2024</h4>
-                            <p>With a couple of friends, I founded Cove Innovative Limited aiming to turn interesting, game-changing ideas into real-world products.</p>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Founder</h3>
+                                <span class="company">@ <a href="https://coveinnovative.com/">Cove Innovative Limited</a></span>
+                                <span class="date">2022 - 2024</span>
+                            </div>
+                            <p>Co-founded a company aiming to turn interesting, game-changing ideas into real-world products.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="info">
-                            <a href="https://shopline.com/"><h3 class="title"><span>Software Engineer</span> - SHOPLINE</h3></a>
-                            <h4 class="subtitle">2021-2022</h4>
-                            <p>I helped architect, develop, and maintain high quality, scalable applications such as OPEN-API and storefront.</p>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Software Engineer</h3>
+                                <span class="company">@ <a href="https://shopline.com/">SHOPLINE</a></span>
+                                <span class="date">2021 - 2022</span>
+                            </div>
+                            <p>Architected, developed, and maintained high quality, scalable applications such as OPEN-API and storefront.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="info">
-                            <h3 class="title"><span>Computer Engineering Graduate</span> - HKUST</h3>
-                            <h4 class="subtitle">2021</h4>
-                            <p>Getting a Computer Engineering degree from Hong Kong University of Science and Technology led me to build a solid foundation for my future career as a great software engineer.</p>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Computer Engineering Graduate</h3>
+                                <span class="company">@ HKUST</span>
+                                <span class="date">2021</span>
+                            </div>
+                            <p>Built a solid foundation for my future career as a software engineer.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="info">
-                            <h3 class="title"><span>Software Engineer Intern</span> - Paititi</h3>
-                            <h4 class="subtitle">2020</h4>
-                            <p>Through the three-month internship, I have helped develop a responsive, stunning and high-performance cross-platform mobile application using Flutter.</p>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Software Engineer Intern</h3>
+                                <span class="company">@ Paititi</span>
+                                <span class="date">2020</span>
+                            </div>
+                            <p>Developed a responsive, stunning and high-performance cross-platform mobile application using Flutter.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tag">
-                &lt;/experiences&gt;
             </div>
         </section>
 
-        <section class="projects">
-            <div class="tag">
-                &lt;projects&gt;
-            </div>
-            <div class="glass">
-                <div class="row">
-                    <div class="column">
-                        <div><a href="https://www.befriendok.com/" target="_blank"><h3>be friend ok?</h3></a></div>
-                        <div class="stack">
-                            <div>Flutter</div>
-                            <div>Dart</div>
-                            <div>Firebase</div>
-                            <div>Android Studio</div>
+        <section id="projects" class="section-padding">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-right"><span class="mono-text">02.</span> Some Things I've Built</h2>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="img/projects/bfok.jpg" alt="be friend ok?">
+                            <div class="overlay"></div>
                         </div>
-                        <div class="external-links"><a href="https://www.befriendok.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a></div>
-                        <div class="description">
-                            Released on January 2023. An innovative dating app. Currently offline.
+                        <div class="project-content">
+                            <div class="project-overline">Featured Project</div>
+                            <h3 class="project-title"><a href="https://www.befriendok.com/" target="_blank">be friend ok?</a></h3>
+                            <div class="project-description">
+                                <p>An innovative dating app released in January 2023.</p>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>Flutter</li>
+                                <li>Dart</li>
+                                <li>Firebase</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://www.befriendok.com/" target="_blank" aria-label="External Link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <hr class="divider">
-                    <div class="column mobile-hide">
-                        <div class="project-img"><img src="img/projects/bfok.jpg" width="200px"></div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="img/projects/wolve.png" alt="Weed Out Wolves">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-overline">Featured Project</div>
+                            <h3 class="project-title"><a href="https://www.weedoutwolves.com/" target="_blank">Weed Out Wolves</a></h3>
+                            <div class="project-description">
+                                <p>Homepage for a board game/party room company located in Kwun Tong.</p>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>Flutter</li>
+                                <li>Dart</li>
+                                <li>Cloudflare</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://www.weedoutwolves.com/" target="_blank" aria-label="External Link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="img/projects/if.png" alt="Innate Fervor">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-overline">Freelance</div>
+                            <h3 class="project-title"><a href="https://www.innatefervor.xyz/" target="_blank">Innate Fervor</a></h3>
+                            <div class="project-description">
+                                <p>A stunning webpage created from scratch for a client.</p>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>HTML/CSS</li>
+                                <li>JQuery</li>
+                                <li>GCP</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://www.innatefervor.xyz/" target="_blank" aria-label="External Link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <!-- Using a placeholder or video poster if available, falling back to a generic tech image if needed -->
+                            <div class="video-placeholder">
+                                <i class="fa-solid fa-play-circle fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-overline">University Project</div>
+                            <h3 class="project-title"><a href="https://cse.hkust.edu.hk/ug/fyp/posters/gallery/2020-2021/new/KWT3.mp4" target="_blank">Final Year Project</a></h3>
+                            <div class="project-description">
+                                <p>Best FYP Video Awardee. A VR game experience created with Unity.</p>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>Unity C#</li>
+                                <li>Blender</li>
+                                <li>VR</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://cse.hkust.edu.hk/ug/fyp/posters/gallery/2020-2021/new/KWT3.mp4" target="_blank" aria-label="External Link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-image">
+                            <img src="https://camo.githubusercontent.com/302ceed205cb890f84cea49038169739b77affee64c625818448c7542a0c220b/68747470733a2f2f692e696d6775722e636f6d2f6e627041554d4f2e706e67" alt="Minecraft Modpack Installer">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-overline">Tooling</div>
+                            <h3 class="project-title"><a href="https://github.com/adwonghk/minecraft-custom-modpack-installer" target="_blank">Minecraft Modpack Installer</a></h3>
+                            <div class="project-description">
+                                <p>Cross-platform software to automate mod installation for friends.</p>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>Java</li>
+                                <li>Swing</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/adwonghk/minecraft-custom-modpack-installer" target="_blank" aria-label="External Link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="row">
-                    <div class="column mobile-hide">
-                        <div class="project-img"><img src="img/projects/wolve.png"></div>
-                    </div>
-                    <div class="column">
-                        <div><a href="https://www.weedoutwolves.com/" target="_blank"><h3>Weed Out Wolves Homepage</h3></a></div>
-                        <div class="stack">
-                            <div>Flutter</div>
-                            <div>Dart</div>
-                            <div>VS Code</div>
-                            <div>Cloudflare</div>
-                        </div>
-                        <div class="external-links"><a href="https://www.weedoutwolves.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a></div>
-                        <div class="description">A board game/party room kind of company located in Kwun Tong that I have founded with my friends.</div>
-                    </div>
-                    <hr class="divider">
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <div><a href="https://www.innatefervor.xyz/" target="_blank"><h3>Innate Fervor Homepage</h3></a></div>
-                        <div class="stack">
-                            <div>HTML</div>
-                            <div>CSS</div>
-                            <div>JQuery</div>
-                            <div>Heroku</div>
-                            <div>GCP</div>
-                        </div>
-                        <div class="external-links"><a href="https://www.innatefervor.xyz/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a></div>
-                        <div class="description">
-                            A freelance job that required me to communicate with the client closely while creating this stunning webpage from scratch.
-                        </div>
-                    </div>
-                    <hr class="divider">
-                    <div class="column mobile-hide">
-                        <div class="project-img"><img src="img/projects/if.png"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column mobile-hide">
-                        <div class="project-img">
-                            <video autoplay muted>
-                                <source src="https://cse.hkust.edu.hk/ug/fyp/posters/gallery/2020-2021/new/KWT3.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div><a href="https://cse.hkust.edu.hk/ug/fyp/posters/gallery/2020-2021/new/KWT3.mp4" target="_blank"><h3>Final Year Project</h3></a></div>
-                        <div class="stack">
-                            <div>Unity C#</div>
-                            <div>Blender</div>
-                            <div>VR</div>
-                        </div>
-                        <div class="external-links"><a href="https://cse.hkust.edu.hk/ug/fyp/posters/gallery/2020-2021/new/KWT3.mp4" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a></div>
-                        <div class="description">
-                            The promotional video that got the Best FYP Video Awardees. It was a fun experience to try to create a VR game that we really liked.
-                        </div>
-                    </div>
-                    <hr class="divider">
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <div><a href="https://github.com/adwonghk/minecraft-custom-modpack-installer" target="_blank"><h3>Minecraft Custom Modpack Installer</h3></a></div>
-                        <div class="stack">
-                            <div>Java</div>
-                        </div>
-                        <div class="external-links"><a href="https://github.com/adwonghk/minecraft-custom-modpack-installer" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a></div>
-                        <div class="description">
-                            <p>A cross-platform software that I built for my friends who wanted to join my modded minecraft server but was too lazy to install the mods themselves.</p>
-                            <br/><p>It fetches latest data online, presents them nicely and guides the user throughout the process.</p>
-                        </div>
-                    </div>
-                    <div class="column mobile-hide">
-                        <div class="project-img"><img src="https://camo.githubusercontent.com/302ceed205cb890f84cea49038169739b77affee64c625818448c7542a0c220b/68747470733a2f2f692e696d6775722e636f6d2f6e627041554d4f2e706e67"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="tag">
-                &lt;/projects&gt;
             </div>
         </section>
 
-        <section class="my_cat">
-            <div class="tag">
-                &lt;my_cat&gt;
-            </div>
-            <div class="cat-group">
-                <div class="little-card cat-card"> </div>
-                <div class="big-card cat-card"> </div>
-                <div class="little-card cat-card"> </div>
-                <div class="big-card cat-card"> </div>
-                <div class="little-card cat-card"> </div>
-                <div class="big-card cat-card"> </div>
-                <div class="little-card cat-card"> </div>
-                <div class="big-card cat-card"> </div>
-            </div>
-            <div class="tag">
-                &lt;/my_cat&gt;
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="tag">
-                &lt;get_in_touch&gt;
-            </div>
-            <div class="contacts">
-                <div><a href="https://www.linkedin.com/in/adrian-wong-3711551a7/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></div>
-                <div><a href="https://github.com/adwonghk" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></div>
-                <div><a href="mailto:adwonghk+job@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2xl"></i></a></div>
-            </div>
-            <div class="tag">
-                &lt;/get_in_touch&gt;
+        <section id="cats" class="section-padding">
+            <div class="container">
+                <h2 class="section-title center-text" data-aos="fade-up"><span class="mono-text">03.</span> My Cats</h2>
+                <p class="center-text" style="margin-bottom: 3rem; color: var(--slate);">Because every developer needs a supervisor.</p>
+                
+                <div class="cat-display-wrapper" data-aos="zoom-in">
+                    <div class="cat-group">
+                        <div class="little-card cat-card"> </div>
+                        <div class="big-card cat-card"> </div>
+                        <div class="little-card cat-card"> </div>
+                        <div class="big-card cat-card"> </div>
+                        <div class="little-card cat-card"> </div>
+                        <div class="big-card cat-card"> </div>
+                        <div class="little-card cat-card"> </div>
+                        <div class="big-card cat-card"> </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-    </body>
+        <section id="contact" class="section-padding contact-section">
+            <div class="container center-text">
+                <p class="mono-text highlight" data-aos="fade-up">04. What's Next?</p>
+                <h2 class="big-title" data-aos="fade-up" data-aos-delay="100">Get In Touch</h2>
+                <p class="contact-desc" data-aos="fade-up" data-aos-delay="200">
+                    I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                </p>
+                <a href="mailto:adwonghk+job@gmail.com" class="btn btn-primary big-btn" data-aos="fade-up" data-aos-delay="300">Say Hello</a>
+                
+                <div class="social-links">
+                    <a href="https://github.com/adwonghk" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:adwonghk+job@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
+    <footer>
+        <div class="container center-text">
+            <p>Designed & Built by Adrian Wong</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
+</body>
 </html>
