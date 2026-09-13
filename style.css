@@ -582,3 +582,33 @@ footer {
         transform: scale(0.8);
     }
 }
+
+/* A small arcade easter egg, discoverable by mouse, touch, and keyboard. */
+.arcade-easter-egg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-height: 44px;
+    margin-top: 12px;
+    padding: 0 14px;
+    border: 1px dashed var(--card-hover);
+    border-radius: 6px;
+    color: var(--text-color);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+.arcade-easter-egg:hover,
+.arcade-easter-egg:focus-visible {
+    color: var(--highlight-color);
+    border-color: var(--highlight-color);
+    background-color: var(--card-bg);
+}
+.arcade-easter-egg:focus-visible {
+    outline: 2px solid var(--highlight-color);
+    outline-offset: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+    .arcade-easter-egg { transition: none; }
+}
